@@ -24,7 +24,7 @@ def get_config(**optional_kwargs):
     parser.add_argument('--patience', type=int, default=6)
     parser.add_argument('--n_epoch', type=int, default=500)
     parser.add_argument('--optimizer', type=str, default='Adam')
-    parser.add_argument('--learning_rate', type=float, default=1e-4)
+    parser.add_argument('--learning_rate', type=float, default=0.003)
     
     args = parser.parse_args()
     
