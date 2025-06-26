@@ -2,6 +2,7 @@
 
 Run as:
 ```
+python main.py --dataset_dir ['root_dir']
 ```
 
 Run the following command to find optimal number of hidden units for LSTM
