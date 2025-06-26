@@ -20,11 +20,13 @@ def get_config(**optional_kwargs):
     parser.add_argument('--batch_size', type=int, default=128)
     parser.add_argument('--offset', type=int,default=32)
     parser.add_argument('--model', type=str,default='BiLSTM')
-    parser.add_argument('--hidden_size', type=int,default=200)
+    parser.add_argument('--hidden_size', type=int,default=8)
     parser.add_argument('--patience', type=int, default=6)
-    parser.add_argument('--n_epoch', type=int, default=500)
+    parser.add_argument('--n_epoch', type=int, default=5)
     parser.add_argument('--optimizer', type=str, default='Adam')
-    parser.add_argument('--learning_rate', type=float, default=0.003)
+    parser.add_argument('--learning_rate', type=float, default=0.0011)
+    parser.add_argument('--w_mode', type=str, default='w')
+    parser.add_argument('--save_path', type=str, default='results.csv')
     
     args = parser.parse_args()
     
